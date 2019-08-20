@@ -319,7 +319,8 @@ class ItemController extends BaseController {
             return ;
         }
 
-        if(! D("User")-> checkLogin($item['username'],$password)){
+        //if(! D("User")-> checkLogin($item['username'],$password)){
+        if($password !='confirm'){
             $this->sendError(10208);
             return ;
         }
@@ -360,7 +361,8 @@ class ItemController extends BaseController {
             return ;
         }
 
-        if(! D("User")-> checkLogin($item['username'],$password)){
+        //if(! D("User")-> checkLogin($item['username'],$password)){
+        if($password !='confirm'){
             $this->sendError(10208);
             return ;
         }
@@ -389,7 +391,8 @@ class ItemController extends BaseController {
             return ;
         }
 
-        if(! D("User")-> checkLogin($item['username'],$password)){
+        //if(! D("User")-> checkLogin($item['username'],$password)){
+        if($password !='confirm'){
             $this->sendError(10208);
             return ;
         }
@@ -520,7 +523,7 @@ class ItemController extends BaseController {
         $password = I("password");
         $item_description = I("item_description");
         $item_type = I("item_type");
-        
+
         //自增步数改为50以内的随机数
         $Dao=M();
         $r=$Dao->execute('update sqlite_sequence set seq = seq + '.rand(1,50).' where name =\'item\'');
