@@ -67,7 +67,7 @@ class ExportController extends BaseController {
         if ($catalogs) {
             foreach ($catalogs as $key => $value) {
                 $data .= "<h1>{$parent}、{$value['cat_name']}</h1>";
-                $data .= '<div style="margin-left:20px;">';
+                $data .= '<div style="margin-left:0px;">';
                     $child = 1 ;
                     if ($value['pages']) {
                         foreach ($value['pages'] as $page) {
