@@ -87,7 +87,7 @@ function output_word($data,$fileName=''){
             } 
             .codestyle{
                 word-break: break-all;
-                mso-highlight:silver;
+                mso-highlight:rgb(252, 252, 252);
                 padding-left: 5px; background-color: rgb(252, 252, 252); border: 1px solid rgb(225, 225, 232);
             }
         </style>
