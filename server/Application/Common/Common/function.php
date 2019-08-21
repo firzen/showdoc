@@ -80,10 +80,11 @@ function output_word($data,$fileName=''){
                 border: none;  
                 width: 100%;  
             }  
-            td  
+            td,tr  
             {  
-                border: solid #CCC 1px;  
-            }  
+                border: solid #CCC 1px;
+                padding:3px;
+            } 
             .codestyle{
                 word-break: break-all;
                 background:silver;mso-highlight:silver;
