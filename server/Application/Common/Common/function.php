@@ -87,7 +87,8 @@ function output_word($data,$fileName=''){
             } 
             .codestyle{
                 word-break: break-all;
-                background:silver;mso-highlight:silver;
+                mso-highlight:silver;
+                padding-left: 5px; background-color: rgb(252, 252, 252); border: 1px solid rgb(225, 225, 232);
             }
         </style>
         <meta name=ProgId content=Word.Document>
