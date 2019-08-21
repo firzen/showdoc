@@ -82,6 +82,7 @@ function output_word($data,$fileName=''){
         {  
             border: solid #CCC 1px;
             padding:3px;
+            font-size:9pt;
         } 
         .codestyle{
             word-break: break-all;
